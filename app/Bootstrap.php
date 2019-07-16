@@ -29,5 +29,14 @@ class Bootstrap extends \Yaf\Bootstrap_Abstract {
 	public function _initLog(\Yaf\Dispatcher $dispatcher)
 	{
 
+        \think\facade\Log::init([
+            'default'	=>	'file',
+            'channels'	=>	[
+                'file'	=>	[
+                    'type'	=>	'file',
+                    'path'	=>	APP_PATH . '/runtime/logs/',
+                ],
+            ],
+        ]);
 	}
 }
