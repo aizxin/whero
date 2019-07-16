@@ -1,4 +1,9 @@
 ﻿## yaf swoole 
+swoole 4.3.5
+yaf 3.0.7
+yaconf 1.0.7
+
+
 
 ## 配置 php.ini
 ```
