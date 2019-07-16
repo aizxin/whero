@@ -1,0 +1,16 @@
+[2019-07-10 21:04:26 #67664.4]	WARNING	swSignal_callback (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-07-10 21:04:26 *67674.0]	WARNING	swSignal_callback (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-07-10 21:04:26 *67677.3]	WARNING	swSignal_callback (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-07-10 21:04:26 *67675.1]	WARNING	swSignal_callback (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-07-10 21:04:26 *67676.2]	WARNING	swSignal_callback (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-07-10 21:04:26 $67665.0]	WARNING	swSignal_callback (ERRNO 707): Unable to find callback function for signal Hangup: 1
+[2019-07-10 21:04:26 $67665.0]	WARNING	swManager_check_exit_status: worker#11[pid=67681] abnormal exit, status=0, signal=1
+[2019-07-10 21:04:26 $67665.0]	WARNING	swManager_check_exit_status: worker#10[pid=67680] abnormal exit, status=0, signal=1
+[2019-07-10 21:04:26 $67665.0]	WARNING	swManager_check_exit_status: worker#9[pid=67679] abnormal exit, status=0, signal=1
+[2019-07-10 21:04:26 $67665.0]	WARNING	swManager_check_exit_status: worker#8[pid=67678] abnormal exit, status=0, signal=1
+[2019-07-10 21:04:26 $67665.0]	WARNING	swManager_check_exit_status: worker#7[pid=67673] abnormal exit, status=0, signal=1
+[2019-07-10 21:04:26 $67665.0]	WARNING	swManager_check_exit_status: worker#6[pid=67672] abnormal exit, status=0, signal=1
+[2019-07-10 21:04:26 $67665.0]	WARNING	swManager_check_exit_status: worker#5[pid=67671] abnormal exit, status=0, signal=1
+[2019-07-10 21:04:26 $67665.0]	WARNING	swManager_check_exit_status: worker#4[pid=67670] abnormal exit, status=0, signal=1
+[2019-07-16 14:20:49 $4601.0]	WARNING	swManager_check_exit_status: worker#0[pid=4606] abnormal exit, status=255, signal=0
+[2019-07-16 14:20:54 $4601.0]	WARNING	swManager_check_exit_status: worker#1[pid=4607] abnormal exit, status=255, signal=0

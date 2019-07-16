@@ -1,0 +1,26 @@
+{
+    "name": "whero/yaf_orm",
+    "authors": [
+        {
+            "name": "aizxin",
+            "email": "aizxin@gmail.com"
+        }
+    ],
+    "require": {
+        "whero/swf-server": "dev-master"
+    },
+    "require-dev": {
+        "swoft/swoole-ide-helper": "^4.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "swf\\": "src/"
+        }
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+    }
+}
