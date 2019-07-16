@@ -5,6 +5,7 @@
  * @Desc: 默认控制器 
  */
 
+use swf\model\UserModel;
 
 class IndexController extends Controller {
 
@@ -14,12 +15,12 @@ class IndexController extends Controller {
 	 * @Desc: 默认动作 
 	 */	
 	public function indexAction() {
-//        \swf\facade\Cache::set('123bdsqjbd',1234567);
-//	    var_dump(\swf\facade\Cache::get('123bdsqjbd'));
-//        \swf\facade\Db::run(['type'=>'mysql']);
-//        $modelUser = new \App\Models\UserModel();
+        \swf\facade\Cache::set('123bdsqjbd',1234567);
+	    var_dump(\swf\facade\Cache::get('123bdsqjbd'));
+//        var_dump(\swf\facade\Db::instance());
+//        $modelUser = new UserModel();
 
-//         var_dump($modelUser);
+//         var_dump($modelUser->select()->toArray());
 //
 //        var_dump($modelUser->cache());
 
@@ -76,13 +77,13 @@ class IndexController extends Controller {
 //            ->make(\swf\event\EventDispatcher::class)
 //            ->dispatch(new \swf\process\event\ServerEvent(\Yaf\Registry::get('swoole')));
 
-//        \swf\facade\Timer::tick(2000,function (){
-//            var_dump(time());
-//        });
+        \swf\facade\Timer::tick(2000,function (){
+            var_dump(time());
+        });
 
-//        \swf\task\Task::async(function (){
-//            var_dump(1233);
-//        });
+        \swf\task\Task::async(function (){
+            var_dump(1233);
+        });
 
 //        var_dump(\Yaconf::get('redis'));
 
