@@ -1,1 +1,0 @@
-../whero/swf-server/bin/swf.php
