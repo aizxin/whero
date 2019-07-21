@@ -42,16 +42,16 @@ class TestController extends Controller {
         // $get = $mysql->query("select * from `admin` where id=1 limit 1 ");
         // echo json_encode($get);
 		// \Yaf\Registry::get('db')->push($mysql);
-		$redis = \Yaf\Registry::get('redis')->pop();
-        //var_dump($mysql);
-        $get = $redis->set('ansjn','ndjand');
-		echo json_encode($get);
-		$get = $redis->get('ansjn');
-		var_dump($get);
+//		$redis = \Yaf\Registry::get('redis')->pop();
+//        //var_dump($mysql);
+//        $get = $redis->set('ansjn','ndjand');
+//		echo json_encode($get);
+//		$get = $redis->get('ansjn');
+//		var_dump($get);
 		// \Yaf\Registry::get('redis')->push($redis);
 		// var_dump(\Yaf\Registry::get('config')['swoole']['worker_num']);
 		// echo \Yaf\Registry::get('log')->info('ansaadand').PHP_EOL;
 		// $this->getView()->assign("content", "Hello World");
-		return false;
+//		return false;
 	}
 }

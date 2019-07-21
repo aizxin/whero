@@ -8,6 +8,10 @@ error_reporting(E_ALL);
  * @author Sow
  */
 define('APP_PATH', dirname(__DIR__));
+
+require APP_PATH.'/vendor/autoload.php';
+
+
 $application = new \Yaf\Application( APP_PATH . "/conf/application.ini");
 $application->bootstrap()->run();
 
