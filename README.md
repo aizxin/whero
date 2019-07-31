@@ -22,3 +22,12 @@ extension="swoole.so"
 swoole.enable_coroutine = On
 swoole.use_shortname = 'Off'
 ```
+
+
+## 使用 smproxy 
+```
+[swoole]
+extension="swoole.so"
+swoole.enable_coroutine = On
+swoole.use_shortname = 'On'
+```
