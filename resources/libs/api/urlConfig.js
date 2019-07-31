@@ -4,9 +4,9 @@
  * @type {{login: {url: string, type: string}}}
  */
 const urlConfig = {
-  login: {},
-  logout: {},
-  userinfo: { url: 'info', type: 'post' },
+  login: {url: 'admin/auth/login', type: 'post'},
+  logout: {url: 'admin/auth/logout', type: 'post'},
+  userinfo: { url: 'admin/auth/info', type: 'post' },
   router: { url: 'router', type: 'post' },
   isLogin: { url: 'isLogin', type: 'post' },
 }

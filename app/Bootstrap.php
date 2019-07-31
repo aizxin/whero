@@ -14,7 +14,11 @@ class Bootstrap extends \Yaf\Bootstrap_Abstract
      */
     public function _initRouteCofig(\Yaf\Dispatcher $dispatcher)
     {
-        $router = \Yaconf::get('routes');
+        if (class_exists('Yaconf')){
+            $router = \Yaconf::get('routes');
+        } else {
+            $router = (new \Yaf\Config\Ini(APP_PATH . "/conf/routes.ini"))->toArray();
+        }
 
         $dispatcher->getRouter()->addConfig($router);
     }
@@ -57,12 +61,17 @@ class Bootstrap extends \Yaf\Bootstrap_Abstract
      */
     public function _initDb(\Yaf\Dispatcher $dispatcher)
     {
+        if (class_exists('Yaconf')){
+            $mysql = \Yaconf::get('mysql');
+        } else {
+            $mysql = (new \Yaf\Config\Ini(APP_PATH . "/conf/mysql.ini"))->toArray();
+        }
         \swf\facade\Db::setConfig([
             // 默认数据连接标识
             'default'     => 'mysql',
             // 数据库连接信息
             'connections' => [
-                'mysql' => \Yaconf::get('mysql'),
+                'mysql' => $mysql,
                 'mongo' => [
                     // 数据库类型
                     'type'          => 'mongo',

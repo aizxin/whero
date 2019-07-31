@@ -21,8 +21,6 @@ class IndexController extends Controller
     public function indexAction()
     {
         /* 自己输出响应 */
-//        $this->response->gzip();
-        var_dump(123);
-//        return $this->response->write($this->render("admin"));
+        return $this->response->write($this->render("admin"));
     }
 }

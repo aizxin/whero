@@ -5,6 +5,10 @@ import router from './router'
 import store from './store'
 import i18n from './lang' // Internationalization
 
+// import 'normalize.css/normalize.css'// A modern alternative to CSS resets
+// import 'element-ui/lib/theme-chalk/index.css'
+import '@/styles/index.scss' // global css
+
 import Http from './libs/api/http'
 import './permission' // permission control
 import './icons' // icon

@@ -14,6 +14,7 @@ const user = {
       state.setting = setting
     },
     SET_USER_INFO: (state, user) => {
+      console.log(user)
       state.userInfo = user
     },
     SET_ROLES: (state, roles) => {

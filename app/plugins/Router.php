@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @name SamplePlugin
+ * @name RouterPlugin
  * @desc   Yaf定义了如下的6个Hook,插件之间的执行顺序是先进先Call
  * @see    http://www.php.net/manual/en/class.yaf-plugin-abstract.php
  * @author afoii-12\administrator
@@ -21,19 +21,23 @@ class RouterPlugin extends \Yaf\Plugin_Abstract
     {
         if ((new \Yaf\Route_Static())->match($request->getRequestUri())) {
 
-            $router = \Yaconf::get('routes');
+            if (class_exists('Yaconf')) {
+                $router = \Yaconf::get('routes');
+            } else {
+                $router = (new \Yaf\Config\Ini(APP_PATH . "/conf/routes.ini"))->toArray();
+            }
 
             $keys = array_keys($router);
             $index = array_search($request->getRequestUri(), array_column($router, 'match'));
 
-            if ($index !== false){
+            if ($index !== false) {
                 // 2
                 //$request->setModuleName('admin');
                 //$request->setRequestUri('auth/info');
 
-                $array_names = $router[$keys[$index]]['route'] ?? ['error','error'];
+                $array_names = $router[ $keys[ $index ] ]['route'] ?? ['error', 'error'];
                 // 3
-                $request->setRequestUri(implode('/',array_values($array_names)));
+                $request->setRequestUri(implode('/', array_values($array_names)));
             }
         }
 
